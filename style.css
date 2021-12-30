@@ -11,5 +11,8 @@ h2 {
     color: #1460AA;
 }
 .main-header {
-    color: yellow;
+    color: rgb(50, 235, 50);
+}
+p {
+    color: blue;
 }
