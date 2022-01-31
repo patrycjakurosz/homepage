@@ -1,18 +1,19 @@
 body {
-    background: #fefefe;
+  background: #fefefe;
+  max-width: 1000px;
 }
 section {
-    background: lightcoral;
+  background: lightcoral;
 }
 h1 {
-    color: red;
+  color: red;
 }
 h2 {
-    color: #1460AA;
+  color: #1460aa;
 }
 .main-header {
-    color: rgb(50, 235, 50);
+  color: rgb(50, 235, 50);
 }
 p {
-    color: blue;
+  color: blue;
 }
