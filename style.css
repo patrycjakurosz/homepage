@@ -8,10 +8,19 @@ body {
   margin-bottom: 50px;
   padding: 5px 5px 5px 15px;
 }
+.menu{
+  background: #dbd9e9;
+padding: 15px;
+border-radius: 10px;
+}
 .menu__item {
   color: #228cdb;
-  padding: 15px;
+  display: inline-block;
+  margin-right: 8px;
 }
+  .menu__item--homepage{
+background: #96e3a7;
+  }
 .head {
   color: #0b7189;
 }
