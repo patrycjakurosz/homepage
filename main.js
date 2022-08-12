@@ -1,3 +1,3 @@
-const heading = document.querySelector('.header-h2--js');
+const heading = document.querySelector(".header-h2--js");
 
-heading.innerHTML = 'WTF'
+heading.innerHTML = "WTF";
