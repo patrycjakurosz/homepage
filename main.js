@@ -1,3 +1,3 @@
-const heading = document.querySelector(".header-h2--js");
+const heading = document.querySelector(".header__h2--js");
 
-heading.innerHTML = "WTF";
+heading.innerHTML = "Wyśrodkowałam treść strony, mimo że strona wygląda brzydko ;)";
