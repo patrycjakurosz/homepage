@@ -9,7 +9,8 @@ html {
 } 
 
 body {
-  background: #e1f1f4;
+  background: linear-gradient(180deg, rgba(166,231,231,1) 0%, rgba(136,224,231,0.4206932773109243) 44%, rgba(67,211,240,0.13778011204481788) 100%);
+
 }
 .container__article {
   padding: 15px;
