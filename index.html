@@ -1,93 +1,141 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-</head>
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <nav class="menu">
-            <a class="menu__item menu__item--homepage" href="index.html">Strona główna</a>
-            <a class="menu__item" href="nauka-html.html">Nauka HTML</a>
-            <a class="menu__item" href="praca-domowa.html">Praca domowa</a>
-        </nav>
+      <nav class="menu">
+        <a class="menu__item menu__item--homepage" href="index.html"
+          >Strona główna</a
+        >
+        <a class="menu__item" href="nauka-html.html">Nauka HTML</a>
+        <a class="menu__item" href="praca-domowa.html">Praca domowa</a>
+      </nav>
     </header>
-    <main class = "main">
-        <header class = "main__header">
-        <h1 class = "header__h1">WTF - Co Ten Frontend</h1>
-        <h2 class = "header__h2 header__h2--js"></h2>
+    <main class="main">
+      <header class="main__header">
+        <h1 class="header__h1">WTF - Co Ten Frontend</h1>
+        <h2 class="header__h2 header__h2--js"></h2>
+      </header>
 
-        <section class="container">
-            <h2 class="header__h2">Tydzień 1</h2>
-        </section>
+      <section class="container article-1">
+        <h2 class="header__h2">Tydzień 1</h2>
+        <p class="container__paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet
+          nisl enim. Donec maximus pellentesque pretium. Duis ac ornare velit.
+          Nam mi tortor, finibus et enim a, finibus consectetur sem. Aliquam
+          orci mauris, egestas at sodales vel, fermentum et ligula. Praesent
+          vehicula laoreet odio. Quisque ante dolor, ullamcorper at faucibus sit
+          amet, sodales ut orci.
+        </p>
+      </section>
 
-        <section class="container">
-            <h2 class="header__h2">Tydzień 2</h2>
-        </section>
+      <section class="container article-2">
+        <h2 class="header__h2">Tydzień 2</h2>
+        <p class="container__paragraph">
+          Donec at ex nisi. Praesent euismod blandit massa, ut molestie est
+          tincidunt nec. Etiam non dolor metus. Etiam commodo elit elit, vel
+          pharetra elit venenatis id. Mauris ligula nibh, lobortis a mattis vel,
+          aliquet rhoncus erat. Curabitur enim ex, posuere ut pretium sed,
+          blandit non risus. Donec vehicula venenatis felis, in sodales elit
+          efficitur id. Sed convallis dapibus nulla non sollicitudin. Sed vel
+          lorem ex.
+        </p>
+      </section>
 
-        <section class="container">
-            <h2 class="header__h2">Tydzień 3</h2>
-            <article class="container__article">
-                <h3 class="header__h3">Co to jest HTML</h3>
-                <p class="container__paragraph">HTML - Hyper Text Markup Langiage. Nie jest to typowy język programowania, jest to język znaczników.
-                    HTML składa się ze znaczników. 
-                <p class="container__paragraph"><b>Budowa znaczników:</b> 
-                    <br>&lt;znacznik atrybut&equals;&quot;wartość&quot;&gt;treść&lt;&sol;znacznik&gt;
-                </p>
-            </article>
-            <article class="container__article">
-                <h4 class="header__h4">Znaczniki:</h4>
-                <ul class="coinainer__list">
-                    <li class="container__list--item">&lt;main&gt; - głowna część dokumentu</li>
-                    <li class="container__list--item">&lt;section&gt; - sekcje dokumentu pod względem logicznego podziału. Kazda sekcja powinna mieć
-                    nagłówek.</li>
-                    <li class="container__list--item">&lt;article&gt; - samodzielne treści, może isteniec samodzielnie.</li>
-                    
-                <li class="container__list--item">&lt;header&gt; - nagłówek dokumentu/sekcji/artykułu/</li>
-                <li class="container__list--item">&lt;footer&gt; - stopka</li>
-                <li class="container__list--item">&lt;h1-h6&gt; - nałgłówki</li>
-                <li class="container__list--item">&lt;p&gt; - paragraf</li>
-            </ul>
-            <p class="container__paragraph">Jak <b>odróznic</b> section od article? Przykład: sekcja sport w gazecie gdzie mamy artykuły i taki pojedynczy artykuł opakowany
-                jest w article.</p>
+      <section class="container article-3">
+        <h2 class="header__h2">Tydzień 3</h2>
+        <article class="container__article">
+          <h3 class="header__h3">Co to jest HTML</h3>
+          <p class="container__paragraph">
+            HTML - Hyper Text Markup Langiage. Nie jest to typowy język
+            programowania, jest to język znaczników. HTML składa się ze
+            znaczników.
+          </p>
 
-            </article>
-        </section>
-        <section class="container">
-            <h2 class="header__h2">Tydzień 4</h2>
-            <article class="container__article">
-                <h3 class="header__h3">BEM</h3>
-                <h4 class="header__h4">Co to jest BEM?</h4>
-                <p class="container__paragraph">BEM- block element modifier opiera się na podziale elementów na stronie:</p>
-                <ul class="coinainer__list">
-                    <li class="container__list--item">bloki </li>
-                    <li class="container__list--item">elementy</li>
-                    <li class="container__list--item">modyfikatory</li>
-                </ul>
-                <h4 class="header__h4">Konwencja nazewnictwa:</h4>
-                <ul class="container__list">
-                    <li class="container__list--item">.block - pierwsze słowo w nazwie oznacza, że klasa dotyczy danego bloku</li>
-                    <li class="container__list--item">__element - słowo poprzedzone dwoma podkreślnikami oznacza, że dana klasa dotyczy danego elementu</li>
-                    <li class="container__list--item">--modifier - słwo poprzedzoen dwoma myślnikami klasę będącą modyfikatorem</li>
-                </ul>
-                <p class="container__paragraph"><b>Modyfikatorów</b> można używać zarównow w kontekście <b>elementów jak i bloków</b>!</p>
-                <p class="container__paragraph">W CSS używamy tylko klas.</p>
-                <p class="container__paragraph">Więcej na temat BEM możesz przeczytać <a class="menu-item" href= "http://getbem.com/naming/">w tym artykule</a>.</p>
-            </article>
-        </section>
+          <p class="container__paragraph">
+            <b>Budowa znaczników:</b> <br />&lt;znacznik
+            atrybut&equals;&quot;wartość&quot;&gt;treść&lt;&sol;znacznik&gt;
+          </p>
+        </article>
+        <article class="container__article">
+          <h4 class="header__h4">Znaczniki:</h4>
+          <ul class="coinainer__list">
+            <li class="container__list--item">
+              &lt;main&gt; - głowna część dokumentu
+            </li>
+            <li class="container__list--item">
+              &lt;section&gt; - sekcje dokumentu pod względem logicznego
+              podziału. Kazda sekcja powinna mieć nagłówek.
+            </li>
+            <li class="container__list--item">
+              &lt;article&gt; - samodzielne treści, może isteniec samodzielnie.
+            </li>
+
+            <li class="container__list--item">
+              &lt;header&gt; - nagłówek dokumentu/sekcji/artykułu/
+            </li>
+            <li class="container__list--item">&lt;footer&gt; - stopka</li>
+            <li class="container__list--item">&lt;h1-h6&gt; - nałgłówki</li>
+            <li class="container__list--item">&lt;p&gt; - paragraf</li>
+          </ul>
+          <p class="container__paragraph">
+            Jak <b>odróznic</b> section od article? Przykład: sekcja sport w
+            gazecie gdzie mamy artykuły i taki pojedynczy artykuł opakowany jest
+            w article.
+          </p>
+        </article>
+      </section>
+      <section class="container article-4">
+        <h2 class="header__h2">Tydzień 4</h2>
+        <article class="container__article">
+          <h3 class="header__h3">BEM</h3>
+          <h4 class="header__h4">Co to jest BEM?</h4>
+          <p class="container__paragraph">
+            BEM- block element modifier opiera się na podziale elementów na
+            stronie:
+          </p>
+          <ul class="coinainer__list">
+            <li class="container__list--item">bloki</li>
+            <li class="container__list--item">elementy</li>
+            <li class="container__list--item">modyfikatory</li>
+          </ul>
+          <h4 class="header__h4">Konwencja nazewnictwa:</h4>
+          <ul class="container__list">
+            <li class="container__list--item">
+              .block - pierwsze słowo w nazwie oznacza, że klasa dotyczy danego
+              bloku
+            </li>
+            <li class="container__list--item">
+              __element - słowo poprzedzone dwoma podkreślnikami oznacza, że
+              dana klasa dotyczy danego elementu
+            </li>
+            <li class="container__list--item">
+              --modifier - słwo poprzedzoen dwoma myślnikami klasę będącą
+              modyfikatorem
+            </li>
+          </ul>
+          <p class="container__paragraph">
+            <b>Modyfikatorów</b> można używać zarównow w kontekście
+            <b>elementów jak i bloków</b>!
+          </p>
+          <p class="container__paragraph">W CSS używamy tylko klas.</p>
+          <p class="container__paragraph">
+            Więcej na temat BEM możesz przeczytać
+            <a class="menu-item" href="http://getbem.com/naming/"
+              >w tym artykule</a
+            >.
+          </p>
+        </article>
+      </section>
     </main>
-    <footer class= "footer">
-        Strona domowa- nauka HTML
-    </footer>
-    <script src="js/main.js"></script> 
-</body>
-
+    <footer class="footer">Strona domowa- nauka HTML</footer>
+    <script src="js/main.js"></script>
+  </body>
 </html>
-
-
-
