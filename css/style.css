@@ -7,25 +7,17 @@ html {
 *:after {
   box-sizing: inherit;
 } 
-
 body {
   background: linear-gradient(180deg, rgba(166,231,231,1) 0%, rgba(136,224,231,0.4206932773109243) 44%, rgba(67,211,240,0.13778011204481788) 100%);
 
 }
-.article-1 {
-  grid-area: article-1;
+
+.articles {
+  grid-area: articles;
 }
 
-.article-2 {
-  grid-area: article-2;
-}
-
-.article-3 {
-  grid-area: article-3;
-}
-
-.article-4 {
-  grid-area: article-4;
+.aside {
+  grid-area: aside;
 }
 
 .container__article {
@@ -52,9 +44,8 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-areas: "main__header main__header"
-"article-1 article-2"
-"article-3 article-4";
-grid-template-columns: 1fr 1fr;
+"articles aside";
+grid-template-columns: 1fr 200px;
 }
 
 .main__header {
