@@ -7,13 +7,10 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
 body {
-  background: linear-gradient(
-    180deg,
-    rgba(166, 231, 231, 1) 0%,
-    rgba(136, 224, 231, 0.4206932773109243) 44%,
-    rgba(67, 211, 240, 0.13778011204481788) 100%
-  );
+  background: white;
+  padding: 16px;
 }
 
 .articles {
@@ -22,15 +19,41 @@ body {
 
 .aside {
   grid-area: aside;
+  display: none;
 }
+
 
 .container__article {
   padding: 15px;
+}
+
+.container__picture {
+  display: block;
+  max-width: 100%;
 }
 .header {
   position: sticky;
   top: 0;
 }
+
+.footer {
+  background: black;
+}
+
+.hamburger {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border: none;
+  background: white;
+  padding: 10px;
+}
+
+.header {
+  min-height: 50px;
+  width: 100%;
+}
+
 .header__h1 {
   color: #000000;
 }
@@ -44,55 +67,50 @@ body {
   color: #11add0;
 }
 .main {
-  max-width: 1000px;
-  /*margin: 0 auto;*/
+  
+  margin: 50px auto 0;
+  padding: 16px;
 }
 
 .main__header {
   grid-area: main__header;
 }
+
 .menu {
-  background: #dbd9e9;
+  background: #c4e976;
   padding: 15px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: none;
+  position: fixed;
+  /* width: 100%; */
+  width: calc(100% - 32px);
 }
 .menu__item {
-  color: #228cdb;
-  display: inline-block;
-  margin-right: 30px;
-}
-.menu__item--homepage {
-  background: #96e3a7;
+  display: block;
+  margin: 0 0 16px;
 }
 
-.footer {
-  background: #fefefe;
-  color: #228cdb;
-  padding: 17px;
+.menu--open {
+  display: block;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 427px) {
   body {
-    background: white;
-    margin: 8px auto;
+    background: linear-gradient(
+      180deg,
+      rgba(166, 231, 231, 1) 0%,
+      rgba(136, 224, 231, 0.4206932773109243) 44%,
+      rgba(67, 211, 240, 0.13778011204481788) 100%
+    );
     padding: 16px;
-  }
-
-  .footer {
-    background: black;
   }
 
   .aside {
-    display: none;
+    display: block;
   }
-}
-@media screen and (min-width: 768px) {
-  body {
-    padding: 16px;
+  .header {
+    height: 60px;
   }
+
   .main {
     display: grid;
     grid-template-areas:
@@ -100,5 +118,36 @@ body {
       "articles . aside";
     grid-template-columns: 1fr 64px 200px;
     margin: 16px auto;
+    max-width: 1000px;
   }
+  .menu {
+    background: #dbd9e9;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+  }
+  .menu__item {
+    color: #228cdb;
+    display: inline-block;
+    margin-right: 30px;
+  }
+  .menu__item--homepage {
+    background: #96e3a7;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .footer {
+    background: #fefefe;
+    color: #228cdb;
+    padding: 17px;
+  }
+
 }
+
+

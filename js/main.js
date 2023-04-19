@@ -21,3 +21,10 @@ const woman = {
 }
 woman.greeting(name, age);
 woman.greet(name, age);
+
+const hamburger = document.querySelector('.hamburger--js');
+
+hamburger.addEventListener("click", () => {
+    const nav = document.querySelector('.menu--js');
+    nav.classList.toggle('menu--open')
+})
